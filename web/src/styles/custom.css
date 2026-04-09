@@ -8,9 +8,9 @@
   --fit-border: #334155;
   --fit-text-primary: #e2e8f0;
   --fit-text-muted: #94a3b8;
-  --fit-text-subtle: #64748b;
-  --fit-nav-active-text: #ffffff;
-  --fit-hero-overlay: rgba(8, 12, 20, 0.25);
+  --fit-text-subtle: #a0b2c6;
+  --fit-nav-active-text: #0b1220;
+  --fit-hero-overlay: rgba(8, 12, 20, 0.42);
 
   --sl-font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --sl-font-mono: 'JetBrains Mono', ui-monospace, monospace;
@@ -54,9 +54,9 @@
   --fit-border: #cbd5e1;
   --fit-text-primary: #0f172a;
   --fit-text-muted: #475569;
-  --fit-text-subtle: #94a3b8;
-  --fit-nav-active-text: #ffffff;
-  --fit-hero-overlay: rgba(15, 23, 42, 0.08);
+  --fit-text-subtle: #475569;
+  --fit-nav-active-text: #0b1220;
+  --fit-hero-overlay: rgba(15, 23, 42, 0.04);
 
   --sl-color-accent-low: #dbeafe;
   --sl-color-accent: var(--fit-blue);
@@ -91,18 +91,18 @@
   --sl-color-green-low: #dcfce7;
 }
 
-/* Strict AA preview profile.
-   Toggle by adding class `fit-aa` to the html element in browser devtools. */
-html.fit-aa {
-  --fit-text-subtle: #a0b2c6;
-  --fit-nav-active-text: #0b1220;
-  --fit-hero-overlay: rgba(8, 12, 20, 0.42);
+/* Brand-faithful fallback profile.
+   Toggle by adding class `fit-brand` to the html element in browser devtools. */
+html.fit-brand {
+  --fit-text-subtle: #64748b;
+  --fit-nav-active-text: #ffffff;
+  --fit-hero-overlay: rgba(8, 12, 20, 0.25);
 }
 
-html.fit-aa[data-theme='light'] {
-  --fit-text-subtle: #475569;
-  --fit-nav-active-text: #0b1220;
-  --fit-hero-overlay: rgba(15, 23, 42, 0.04);
+html.fit-brand[data-theme='light'] {
+  --fit-text-subtle: #94a3b8;
+  --fit-nav-active-text: #ffffff;
+  --fit-hero-overlay: rgba(15, 23, 42, 0.08);
 }
 
 /* Keep markdown-inserted image markup inert on landing; hero uses panel background. */
