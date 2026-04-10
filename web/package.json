@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "astro dev --port 4701",
-    "build": "astro build",
-    "preview": "astro preview"
+    "dev": "node ./node_modules/astro/bin/astro.mjs dev --port 4701",
+    "build": "node ./node_modules/astro/bin/astro.mjs build",
+    "preview": "node ./node_modules/astro/bin/astro.mjs preview"
   },
   "dependencies": {
     "astro": "^6.1.0",
