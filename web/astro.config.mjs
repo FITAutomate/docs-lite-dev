@@ -9,6 +9,9 @@ export default defineConfig({
       favicon: '/favicon.ico',
       description: 'FIT Docs Lite starter documentation library built for clear, practical business procedures.',
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/FITAutomate' }],
+      components: {
+        Footer: './src/components/Footer.astro',
+      },
       editLink: {
         baseUrl: 'https://github.com/FITAutomate/fit-docs-lite/edit/main/web/',
       },
