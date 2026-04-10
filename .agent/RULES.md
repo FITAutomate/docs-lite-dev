@@ -12,6 +12,7 @@ It is not the final org template repo and not a client repo.
 3. Keep `web/` + `docs/` root contract stable during this sprint.
 4. Record structural changes in draft governance notes before promotion.
 5. Never commit secrets or local machine paths in user-facing docs.
+6. Respect branch intent: template-bound work merges to **`main`** first; showcase-only work stays on **`docs-lite-showcase`** unless intentionally promoted to `main`.
 
 ## Allowed fast actions
 
@@ -28,4 +29,3 @@ Before promotion to template repo:
 - Starter pack docs exist and match real commands
 - `.agent/CONTEXT.md` is present and valid
 - No scratch files or environment secrets
-
