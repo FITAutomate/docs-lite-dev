@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
           cache-dependency-path: web/package-lock.json
 
@@ -42,8 +42,8 @@ jobs:
       - name: Build site
         working-directory: web
         env:
-          SITE_URL: https://fitautomate.github.io
-          BASE_PATH: /docs-lite-dev
+          SITE_URL: https://docs-lite-demo.fitautomate.com
+          BASE_PATH: /
         run: npm run build
 
       - name: Upload Pages artifact
