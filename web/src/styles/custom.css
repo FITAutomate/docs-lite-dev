@@ -10,7 +10,12 @@
   --fit-text-muted: #94a3b8;
   --fit-text-subtle: #a0b2c6;
   --fit-nav-active-text: #0b1220;
-  --fit-hero-overlay: rgba(8, 12, 20, 0.42);
+  --fit-hero-overlay: linear-gradient(
+    to bottom,
+    rgba(8, 12, 20, 0.58) 0%,
+    rgba(8, 12, 20, 0.46) 46%,
+    rgba(8, 12, 20, 0.34) 100%
+  );
 
   --sl-font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --sl-font-mono: 'JetBrains Mono', ui-monospace, monospace;
@@ -56,7 +61,12 @@
   --fit-text-muted: #475569;
   --fit-text-subtle: #475569;
   --fit-nav-active-text: #0b1220;
-  --fit-hero-overlay: rgba(15, 23, 42, 0.04);
+  --fit-hero-overlay: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.22) 0%,
+    rgba(15, 23, 42, 0.16) 46%,
+    rgba(15, 23, 42, 0.10) 100%
+  );
 
   --sl-color-accent-low: #dbeafe;
   --sl-color-accent: var(--fit-blue);
@@ -96,13 +106,23 @@
 html.fit-brand {
   --fit-text-subtle: #64748b;
   --fit-nav-active-text: #ffffff;
-  --fit-hero-overlay: rgba(8, 12, 20, 0.25);
+  --fit-hero-overlay: linear-gradient(
+    to bottom,
+    rgba(8, 12, 20, 0.44) 0%,
+    rgba(8, 12, 20, 0.32) 46%,
+    rgba(8, 12, 20, 0.22) 100%
+  );
 }
 
 html.fit-brand[data-theme='light'] {
   --fit-text-subtle: #94a3b8;
   --fit-nav-active-text: #ffffff;
-  --fit-hero-overlay: rgba(15, 23, 42, 0.08);
+  --fit-hero-overlay: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.26) 0%,
+    rgba(15, 23, 42, 0.18) 46%,
+    rgba(15, 23, 42, 0.12) 100%
+  );
 }
 
 /* Keep markdown-inserted image markup inert on landing; hero uses panel background. */
@@ -150,6 +170,17 @@ html[data-has-hero] .content-panel .sl-markdown-content,
 html[data-has-hero] .content-panel footer {
   position: relative;
   z-index: 1;
+}
+
+html[data-has-hero] .content-panel .sl-markdown-content {
+  max-width: 72ch;
+  padding: 1.25rem 1.25rem 1rem;
+  border-radius: 0.75rem;
+  background: color-mix(in srgb, var(--sl-color-bg) 72%, transparent 28%);
+}
+
+html[data-has-hero] .content-panel .sl-markdown-content a {
+  text-underline-offset: 0.16em;
 }
 
 html[data-has-hero] .content-panel .hero {
