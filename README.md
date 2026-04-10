@@ -31,7 +31,7 @@ Ship a clean, repeatable docs-lite starter template with:
 - Bring showcase work into the template only via **intentional** cherry-picks or reviewed merges into `main`.
 - After `main` advances, merge **`main` into `docs-lite-showcase`** when the demo should include the latest baseline.
 
-**Showcase hosting:** Configure production deploys (Vercel or Cloudflare Pages) to use branch **`docs-lite-showcase`**, not `main`. See `docs/branching-model.md` for settings.
+**Showcase hosting:** Use GitHub Pages by default for demos and deploy from branch **`docs-lite-showcase`**, not `main`. See `docs/branching-model.md` and `docs/demo-hosting-policy.md`.
 
 Full detail: `docs/branching-model.md`.
 

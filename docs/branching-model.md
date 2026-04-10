@@ -29,6 +29,14 @@ Point **live showcase** deployments at branch **`docs-lite-showcase`**, not `mai
 
 - **`main`** is the template baseline reference; it should stay suitable for promotion and client generation.
 - **`docs-lite-showcase`** is the long-lived branch for a public or internal demo that may diverge.
+- **Default demo host is GitHub Pages.** Use Vercel/Cloudflare only by documented exception.
+
+### GitHub Pages (default for demos)
+
+1. Repository Settings -> Pages -> Build and deployment -> Source: **GitHub Actions**.
+2. Keep `.github/workflows/deploy-github-pages.yml` enabled.
+3. Push to `docs-lite-showcase` to deploy the demo.
+4. Expected URL pattern: `https://fitautomate.github.io/docs-lite-dev/`.
 
 ### Vercel
 

@@ -1,8 +1,12 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+const siteUrl = process.env.SITE_URL ?? 'https://fitautomate.com';
+const basePath = process.env.BASE_PATH ?? '/';
+
 export default defineConfig({
-  site: 'https://fitautomate.com',
+  site: siteUrl,
+  base: basePath,
   integrations: [
     starlight({
       title: 'FIT Docs',
